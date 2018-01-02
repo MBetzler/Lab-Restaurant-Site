@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <style type="text/css">
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            .wrapper {
+                height: 100%;
+                display: table;
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .header {
+                display: table-row;
+                height: 1px;
+                border-bottom: solid 1px black;
+            }
+            .header h1 {
+                margin: .3125em 0;
+            }
+            .main {
+                height: 100%;
+                display: table;
+                width: 100%;
+            }
+            .cell {
+                display: table-cell;
+            }
+            .footer {
+                display: table-row;
+                height: 1px;
+                border-top: solid 1px black;
+            } 
+            .footer .p-address {
+                margin-top: .4375em;
+            }
+            .footer .p-phone {
+                margin-bottom: .4375em;
+            }
+            a {
+                display: inline-block;
+                margin: .625em 0 .75em 2.5em;
+                padding: 0;
+            }
+            /*--------------------*/
+            .placeholder {              /*These two classes allow retaining original large image for scaling/download/viewing.*/
+                margin: 1.5em 0 0;      /*Alternate for less overhead is using and styling edited, smaller image: images/restaurantInteriorS.jpg.*/
+                width: 25em;
+                height: 9.375em;
+                overflow: hidden;
+                display: inline-block;
+            }
+            .placeholder img {
+                width: 25em;
+            }
+            .placeholder p {
+                margin: 0 0 .5em;
+                font-size: .95em;
+                text-align: justify;
+            }
+            </style>
+    </head>
+    <body style="font-size: 100%;">
+        <div class="wrapper">
+            <div class="header">
+                <h1>The Elusive Diner</h1>
+            </div>
+            <div class="header" style="text-align: left;">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contactUs.html">Contact Us</a>
+            </div>
+            <div class="main">
+                <div class="cell">
+                    <div class="placeholder">
+                        <img src="images/restaurantInteriorL.jpg" 
+                        alt="Picture of restaurant's interior." />
+                    </div>
+                    <br>
+                    <div class="placeholder" style="height: 12.5em;">
+                        <p>
+                            The Elusive Diner offers a range of delicious American food to their customers in a fantastic retro 
+                            atmosphere. We regularly serve Lunch and Dinner at a great price. We're best known for our delicious 
+                            sandwiches and burgers, but we also offer fresh salad.
+                        </p>
+                        <p>
+                            We pride ourselves on our menu being fresh and the food being prepared in a simple manner in order 
+                            to satisfy our customers' heart and soul.
+                        </p>
+                        <p>
+                            The Elusive Diner philosophy is simple: memorable service and absolutely the best food.
+                        </p>
+                        <p>
+                            We're hard to find ...but the search is worth it!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="p-address">
+                    600 Hamilton Ave N, Minneapolis, MN 55401
+                </p>
+                <p class="p-phone">
+                    (612) 555-1234
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <style type="text/css">
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+            }
+            .wrapper {
+                height: 100%;
+                display: table;
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .header {
+                display: table-row;
+                height: 1px;
+                border-bottom: solid 1px black;
+            }
+            .header h1 {
+                margin: .3125em 0;
+            }
+            .main {
+                height: 100%;
+                display: table;
+                width: 100%;
+            }
+            .cell {
+                display: table-cell;
+            }
+            .footer {
+                display: table-row;
+                height: 1px;
+                border-top: solid 1px black;
+            } 
+            .footer .p-address {
+                margin-top: .4375em;
+            }
+            .footer .p-phone {
+                margin-bottom: .4375em;
+            }
+            a {
+                display: inline-block;
+                margin: .625em 0 .75em 2.5em;
+                padding: 0;
+            }
+            /*-------------------*/
+            .row {
+                display: table-row;
+            }
+            .cell-fixed {
+                margin: 0;
+                padding: 0;
+                height: 9.375em;
+                text-align: center;
+            }
+            .cell-fixed p {
+                margin: 0;
+                padding: 0;
+                font-size: .9em;
+            }
+            .cell-fixed h3 {
+                margin: 0 0 .5em;
+                padding: 0;
+                font-size: 1.08em;
+            }
+            .cell-fixed-top {
+                width: 17em;
+                height: .5em;
+            }
+            </style>
+    </head>
+    <body style="font-size: 100%;">
+        <div class="wrapper">
+            <div class="header">
+                <h1>The Elusive Diner</h1>
+            </div>
+            <div class="header" style="text-align: left;">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            <div class="main" style="table-layout: fixed;">
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell cell-fixed-top"></div>
+                    <div class="cell cell-fixed-top"></div>
+                    <div class="cell cell-fixed-top"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell cell-fixed">
+                        <h3>Burger and Fries</h3>
+                        <p>An American Classic!</p>
+                        <p>Your choice - with or without cheese</p>
+                        <p>Pickle, onion, tomato, and lettuce</p>
+                        <p>Served with out famous thick cut</p>
+                        <p>french fries</p>
+                        <p>$7.95</p>
+                    </div>
+                    <div class="cell cell-fixed">
+                        <h3>Hot Dog and Chips</h3>
+                        <p>A Summer Classic!</p>
+                        <p>Your choice - white or wheat bun</p>
+                        <p>Relish, mustard, and ketchup</p>
+                        <p>Served with our house-made chips</p>
+                        <p>$7.95</p>
+                    </div>
+                    <div class="cell cell-fixed">
+                        <h3>Italian Sausage and Peppers</h3>
+                        <p>An All-Time Favorite!</p>
+                        <p>Your choice - mild or spicy</p>
+                        <p>Cole Slaw</p>
+                        <p>Served with garlice mashers</p>
+                        <p>$10.95</p>
+                    </div>
+                    <div class="cell"></div>
+                </div>                                        
+                <div class="row">
+                    <div class="cell"></div>
+                    <div class="cell cell-fixed">
+                        <h3>Tenderloin Sandwich and Chips</h3>
+                        <p>Really Hits the Spot!</p>
+                        <p>Plain or Sesame Seed Bun</p>
+                        <p>Pickle, onion, tomato, and lettuce</p>
+                        <p>Served with our house-made chips</p>
+                        <p>$8.95</p>
+                    </div>
+                    <div class="cell cell-fixed">
+                        <h3>House Salad</h3>
+                        <p>On the Lighter Side</p>
+                        <p>Your choice - with or without cheese</p>
+                        <p>Iceberg lettuce, tomatoes, peppers</p>
+                        <p>Thousand Island or Ranch Dressing</p>
+                        <p>Served with a dinner roll</p>
+                        <p>$6.95</p>
+                    </div>
+                    <div class="cell cell-fixed">
+                        <h3>Brisket Sandwich and Fries</h3>
+                        <p>A Tast of Texas!</p>
+                        <p>Smoked Brisket on thick-cut Texas Toast</p>
+                        <p>Cole Slaw</p>
+                        <p>Served with our famous thick-cut</p>
+                        <p>french fries</p>
+                        <p>$7.95</p>
+                    </div>
+                    <div class="cell"></div>
+                </div>
+                <div class="row" style="height: 100%;">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="p-address">
+                    600 Hamilton Ave N, Minneapolis, MN 55401
+                </p>
+                <p class="p-phone">
+                    (612) 555-1234
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

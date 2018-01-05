@@ -14,7 +14,8 @@
                 height: 9.375em;
                 text-align: center;
             }
-            .cell-fixed p {
+            .cell-fixed p,
+            .cell-fixed-bev p {
                 margin: 0;
                 padding: 0;
                 font-size: .9em;
@@ -28,91 +29,174 @@
                 width: 17em;
                 height: .5em;
             }
+            .cell-fixed-bev {
+                margin: 0;
+                padding: 0 0 0 2.75em;
+                height: 1.10em;
+                text-align: left;
+                vertical-align: bottom;
+            }
+            .cell-fixed-top-bev {
+                width: 8.5em;
+                height: 1.5em;
+            }
+            .cell-fixed-bev h3 {
+                margin: 0;
+                padding: 0;
+                font-size: 1.08em;
+                text-decoration: underline;
+            }
             </style>
     </head>
     <body style="font-size: 100%;">
         <div class="wrapper">
             <div class="header">
-                <h1>The Elusive Diner</h1>
+                <h1>Elusive Diner</h1>
             </div>
             <div class="header" style="text-align: left;">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contactUs.html">Contact Us</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="main" style="table-layout: fixed;">
-                <div class="row">
-                    <div class="cell"></div>
-                    <div class="cell cell-fixed-top"></div>
-                    <div class="cell cell-fixed-top"></div>
-                    <div class="cell cell-fixed-top"></div>
-                    <div class="cell"></div>
+            <div class="main">
+                <div class="main" style="table-layout: fixed; height: 19.25em;">
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-top"></div>
+                        <div class="cell cell-fixed-top"></div>
+                        <div class="cell cell-fixed-top"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed">
+                            <h3>Burger and Fries</h3>
+                            <p>An American Classic!</p>
+                            <p>Your choice - with or without cheese</p>
+                            <p>Pickle, onion, tomato, and lettuce</p>
+                            <p>Served with out famous thick cut</p>
+                            <p>french fries</p>
+                            <p>$7.95</p>
+                        </div>
+                        <div class="cell cell-fixed">
+                            <h3>Hot Dog and Chips</h3>
+                            <p>A Summer Classic!</p>
+                            <p>Your choice - white or wheat bun</p>
+                            <p>Relish, mustard, and ketchup</p>
+                            <p>Served with our house-made chips</p>
+                            <p>$7.95</p>
+                        </div>
+                        <div class="cell cell-fixed">
+                            <h3>Italian Sausage and Peppers</h3>
+                            <p>An All-Time Favorite!</p>
+                            <p>Your choice - mild or spicy</p>
+                            <p>Cole Slaw</p>
+                            <p>Served with garlice mashers</p>
+                            <p>$10.95</p>
+                        </div>
+                        <div class="cell"></div>
+                    </div>                                        
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed">
+                            <h3>Tenderloin Sandwich and Chips</h3>
+                            <p>Really Hits the Spot!</p>
+                            <p>Plain or Sesame Seed Bun</p>
+                            <p>Pickle, onion, tomato, and lettuce</p>
+                            <p>Served with our house-made chips</p>
+                            <p>$8.95</p>
+                        </div>
+                        <div class="cell cell-fixed">
+                            <h3>House Salad</h3>
+                            <p>On the Lighter Side</p>
+                            <p>Your choice - with or without cheese</p>
+                            <p>Iceberg lettuce, tomatoes, peppers</p>
+                            <p>Thousand Island or Ranch Dressing</p>
+                            <p>Served with a dinner roll</p>
+                            <p>$6.95</p>
+                        </div>
+                        <div class="cell cell-fixed">
+                            <h3>Brisket Sandwich and Fries</h3>
+                            <p>A Tast of Texas!</p>
+                            <p>Smoked Brisket on thick-cut Texas Toast</p>
+                            <p>Cole Slaw</p>
+                            <p>Served with our famous thick-cut</p>
+                            <p>french fries</p>
+                            <p>$7.95</p>
+                        </div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell"></div>
-                    <div class="cell cell-fixed">
-                        <h3>Burger and Fries</h3>
-                        <p>An American Classic!</p>
-                        <p>Your choice - with or without cheese</p>
-                        <p>Pickle, onion, tomato, and lettuce</p>
-                        <p>Served with out famous thick cut</p>
-                        <p>french fries</p>
-                        <p>$7.95</p>
+                <div class="main" style="table-layout: fixed; height: calc(100% - 19.25em);">
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-top-bev"></div>
+                        <div class="cell cell-fixed-top-bev"></div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell cell-fixed">
-                        <h3>Hot Dog and Chips</h3>
-                        <p>A Summer Classic!</p>
-                        <p>Your choice - white or wheat bun</p>
-                        <p>Relish, mustard, and ketchup</p>
-                        <p>Served with our house-made chips</p>
-                        <p>$7.95</p>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-bev">
+                            <h3>Beverages</h3>
+                        </div>
+                        <div class="cell cell-fixed-bev"></div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell cell-fixed">
-                        <h3>Italian Sausage and Peppers</h3>
-                        <p>An All-Time Favorite!</p>
-                        <p>Your choice - mild or spicy</p>
-                        <p>Cole Slaw</p>
-                        <p>Served with garlice mashers</p>
-                        <p>$10.95</p>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-bev">
+                            <p>Root Beer</p>
+                        </div>
+                        <div class="cell cell-fixed-bev">
+                            <p>$3.00</p>
+                        </div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell"></div>
-                </div>                                        
-                <div class="row">
-                    <div class="cell"></div>
-                    <div class="cell cell-fixed">
-                        <h3>Tenderloin Sandwich and Chips</h3>
-                        <p>Really Hits the Spot!</p>
-                        <p>Plain or Sesame Seed Bun</p>
-                        <p>Pickle, onion, tomato, and lettuce</p>
-                        <p>Served with our house-made chips</p>
-                        <p>$8.95</p>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-bev">
+                            <p>Bottled Water</p>
+                        </div>
+                        <div class="cell cell-fixed-bev">
+                            <p>$1.25</p>
+                        </div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell cell-fixed">
-                        <h3>House Salad</h3>
-                        <p>On the Lighter Side</p>
-                        <p>Your choice - with or without cheese</p>
-                        <p>Iceberg lettuce, tomatoes, peppers</p>
-                        <p>Thousand Island or Ranch Dressing</p>
-                        <p>Served with a dinner roll</p>
-                        <p>$6.95</p>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-bev">
+                            <p>Lemonade</p>
+                        </div>
+                        <div class="cell cell-fixed-bev">
+                            <p>$1.00</p>
+                        </div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell cell-fixed">
-                        <h3>Brisket Sandwich and Fries</h3>
-                        <p>A Tast of Texas!</p>
-                        <p>Smoked Brisket on thick-cut Texas Toast</p>
-                        <p>Cole Slaw</p>
-                        <p>Served with our famous thick-cut</p>
-                        <p>french fries</p>
-                        <p>$7.95</p>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell cell-fixed-bev">
+                            <p>Iced Tea</p>
+                        </div>
+                        <div class="cell cell-fixed-bev">
+                            <p>$1.25</p>
+                        </div>
+                        <div class="cell"></div>
                     </div>
-                    <div class="cell"></div>
-                </div>
-                <div class="row" style="height: 100%;">
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
-                    <div class="cell"></div>
+                    <div class="row">
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
                 </div>
             </div>
             <div class="footer">

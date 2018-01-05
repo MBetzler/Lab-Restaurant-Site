@@ -20,10 +20,19 @@ body {
     margin: .3125em 0;
     font-family: 'Vollkorn SC', serif;
 }
-.header a {
+/* .header a {
     display: inline-block;
     margin: .625em 0 .75em 2.5em;
     padding: 0;
+} */
+.header ul {
+    padding: 0;
+    margin: .625em 0 .75em 2.5em;
+}
+.header ul li {
+    list-style-type: none;
+    display: inline-block;
+    width: 5em;
 }
 .main {
     height: 100%;
@@ -44,3 +53,12 @@ body {
 .footer .p-phone {
     margin-bottom: .4375em;
 }
+  a:visited {
+    color: rgb(177, 2, 2);
+  }
+  a:hover {
+    font-weight: bold;
+  }
+  a:active {
+    text-decoration: none;
+  }

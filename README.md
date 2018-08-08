@@ -1,2 +1,3 @@
-# Lab-Restaurant-Site
-Creating version 1 of three page restaurant site.
+# RestaurantSite
+#### Prework for Software Guild
+Three page website for a fictitious restaurant.

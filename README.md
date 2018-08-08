@@ -1,3 +1,3 @@
 # RestaurantSite
-#### Prework for Software Guild
+### Prework for Software Guild
 Three page website for a fictitious restaurant.
